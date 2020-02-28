@@ -31,18 +31,26 @@ zstyle ':completion:*:default' menu select=2
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' '+m:{[:upper:]}={[:lower:]}'
 
 ### End of Zinit installer's chunk
+zplugin ice wait'0'
 zplugin ice depth=1; zplugin light romkatv/powerlevel10k
+zplugin ice wait'0'
 zplugin light "peterhurford/git-it-on.zsh"
+zplugin ice wait'0'
 zplugin light "zsh-users/zsh-autosuggestions"
+zplugin ice wait'0'
 zplugin light "zsh-users/zsh-syntax-highlighting"
+zplugin ice wait'0'
 zplugin light "zsh-users/zsh-completions"
 zplugin light "zsh-users/zsh-history-substring-search"
+zplugin ice wait'0'
 zplugin light "t413/zsh-background-notify"
-zplugin light "itmst71/cda"
 zplugin light "junegunn/fzf-bin"
 zplugin light "mollifier/anyframe"
+zplugin ice wait'0'
 zplugin light "supercrabtree/k"
+zplugin ice wait'0'
 zplugin light "chrissicool/zsh-256color"
+zplugin ice wait'0'
 zplugin light "/liangguohuan/zsh-dircolors-solarized"
 
 
@@ -64,6 +72,7 @@ alias gb="git branch"
 alias c="code"
 alias wbs="bin/webpack-dev-server"
 alias ssh="~/bin/ssh-change-bg"
+alias ls="exa -ahl --git --time-style=long-iso"
 alias ll="ls -la"
 
 ### anyframe settings
