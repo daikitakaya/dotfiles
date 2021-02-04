@@ -9,6 +9,7 @@ eval "$(nodenv init -)"
 
 ### nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=$HOME/./nvim-osx64/bin:$PATH
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
@@ -80,6 +81,8 @@ alias ssh="~/bin/ssh-change-bg"
 alias ls="exa --icons -ahl --git --time-style=long-iso"
 alias ll="ls -la"
 alias cc="code . -r"
+alias vi="nvim"
+alias vim="nvim"
 
 ### anyframe settings
 bindkey '^u' anyframe-widget-cdr
